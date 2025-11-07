@@ -24,6 +24,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm install
+          npm install --save-dev concurrently
           npm run build
           npm run export
 
